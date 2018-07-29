@@ -10,7 +10,7 @@ import json
 from telebot.types import InputMediaPhoto, InputMediaVideo
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)
-bot=telebot.AsyncTeleBot("487800407:AAERnRGN-XA7N3jHavAaBfFweCvZGptXdbY")
+bot=telebot.AsyncTeleBot("{BOT-KEY}")
 xiao_cao= 'http://www.t66y.com/'
 apihelper.proxy={'http':'http:127.0.0.1:1080'}
 
@@ -105,42 +105,7 @@ def echo_all(message):
             bot.send_media_group(message.chat.id, inputMediaPhoto[i:i + 10])
         # bot.send_media_group(message.chat.id,
         #                      [InputMediaPhoto(a[0:9])])
-        # bot.send_media_group(message.chat.id,
-        #                      [InputMediaPhoto(a[10]), InputMediaPhoto(a[11]),
-        #                       InputMediaPhoto(a[12]), InputMediaPhoto(a[13]),
-        #                       InputMediaPhoto(a[14]), InputMediaPhoto(a[15]),
-        #                       InputMediaPhoto(a[16]), InputMediaPhoto(a[17]),
-        #                       InputMediaPhoto(a[18]), InputMediaPhoto(a[19])])
-        # bot.send_media_group(message.chat.id,
-        #                      [InputMediaPhoto(a[20]), InputMediaPhoto(a[21]),
-        #                       InputMediaPhoto(a[22]), InputMediaPhoto(a[23]),
-        #                       InputMediaPhoto(a[24]), InputMediaPhoto(a[25]),
-        #                       InputMediaPhoto(a[26]), InputMediaPhoto(a[27]),
-        #                       InputMediaPhoto(a[28]), InputMediaPhoto(a[29])])
-        # bot.send_media_group(message.chat.id,
-        #                      [InputMediaPhoto(a[30]), InputMediaPhoto(a[31]),
-        #                       InputMediaPhoto(a[32]), InputMediaPhoto(a[33]),
-        #                       InputMediaPhoto(a[34]), InputMediaPhoto(a[35]),
-        #                       InputMediaPhoto(a[36]), InputMediaPhoto(a[37]),
-        #                       InputMediaPhoto(a[38]), InputMediaPhoto(a[39])])
-        # bot.send_media_group(message.chat.id,
-        #                      [InputMediaPhoto(a[40]), InputMediaPhoto(a[41]),
-        #                       InputMediaPhoto(a[42]), InputMediaPhoto(a[43]),
-        #                       InputMediaPhoto(a[44]), InputMediaPhoto(a[45]),
-        #                       InputMediaPhoto(a[46]), InputMediaPhoto(a[47]),
-        #                       InputMediaPhoto(a[48]), InputMediaPhoto(a[49])])
-        # bot.send_media_group(message.chat.id,
-        #                      [InputMediaPhoto(a[50]), InputMediaPhoto(a[51]),
-        #                       InputMediaPhoto(a[52]), InputMediaPhoto(a[53]),
-        #                       InputMediaPhoto(a[54]), InputMediaPhoto(a[55]),
-        #                       InputMediaPhoto(a[56]), InputMediaPhoto(a[57]),
-        #                       InputMediaPhoto(a[58]), InputMediaPhoto(a[59])])
-        # bot.send_media_group(message.chat.id,
-        #                      [InputMediaPhoto(a[60]), InputMediaPhoto(a[61]),
-        #                       InputMediaPhoto(a[62]), InputMediaPhoto(a[63]),
-        #                       InputMediaPhoto(a[64]), InputMediaPhoto(a[65]),
-        #                       InputMediaPhoto(a[66]), InputMediaPhoto(a[67]),
-        #                       InputMediaPhoto(a[68]), InputMediaPhoto(a[69])])
+
     except Exception as e:
         print(e)
         pass
