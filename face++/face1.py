@@ -23,3 +23,4 @@ token = req.json()['faces'][0]['face_token']+','+req.json()['faces'][1]['face_to
 params2['face_tokens']=token
 req2=requests.post(face_analyze,params=params2)
 print(req2.json())
+print('hello world')
